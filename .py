@@ -6,6 +6,7 @@ df2_melted = pd.melt(df2, id_vars = "Country")
 
 # print df2_melted
 print(df2_melted)
+
 ----
 # Rename the columns of df2_melted: df2_tidy
 df2_tidy = df2_melted.rename(columns = {'variable':'Year','value':'Income'}, inplace = False)
